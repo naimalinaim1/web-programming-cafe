@@ -5,7 +5,7 @@
     "blog_title": "10 Essential Programming Concepts for Beginners",
     "blog_cover_image": "/images/blogs/1.jpg",
     "author_image": "/images/authors/1.jpg",
-    "read_time": "7 minutes",
+    "read_time": "7",
     "publish_date": "2022-01-01"
   },
   {
@@ -14,7 +14,7 @@
     "blog_title": "Mastering Data Structures: A Comprehensive Guide",
     "blog_cover_image": "/images/blogs/2.jpg",
     "author_image": "/images/authors/2.jpg",
-    "read_time": "12 minutes",
+    "read_time": "12",
     "publish_date": "2022-02-15"
   },
   {
@@ -23,7 +23,7 @@
     "blog_title": "Best Practices for Debugging in Python",
     "blog_cover_image": "/images/blogs/3.jpg",
     "author_image": "/images/authors/3.jpg",
-    "read_time": "5 minutes",
+    "read_time": "5",
     "publish_date": "2022-03-10"
   },
   {
@@ -32,7 +32,7 @@
     "blog_title": "Web Development Trends to Watch in 2022",
     "blog_cover_image": "/images/blogs/4.jpg",
     "author_image": "/images/authors/4.jpg",
-    "read_time": "8 minutes",
+    "read_time": "8",
     "publish_date": "2022-04-05"
   }
 ]
