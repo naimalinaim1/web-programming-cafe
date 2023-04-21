@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { InfoContext } from "../ContextInfo";
 
 const Card = ({ blog }) => {
   const {
@@ -9,6 +10,16 @@ const Card = ({ blog }) => {
     read_time,
     publish_date,
   } = blog;
+
+  const { readTimeCalculate, addBookMarked } = useContext(InfoContext);
+
+  const handleReadTime = (time) => {
+    readTimeCalculate(parseInt(time));
+  };
+
+  const handleBookMarked = (title) => {
+    addBookMarked(title);
+  };
 
   return (
     <div className="border-b text-gray-500 text-lg pb-9 mb-10">
@@ -32,6 +43,7 @@ const Card = ({ blog }) => {
         <div className="flex items-center gap-3">
           <p>{read_time} min read</p>
           <svg
+            onClick={() => handleBookMarked(blog_title)}
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -51,7 +63,12 @@ const Card = ({ blog }) => {
         {blog_title}
       </h2>
       <p className="my-4">#beginners #programming</p>
-      <p className="text-[#6047EC] underline cursor-pointer">Mark as read</p>
+      <p
+        onClick={() => handleReadTime(read_time)}
+        className="text-[#6047EC] underline cursor-pointer"
+      >
+        Mark as read
+      </p>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Blogs from "./components/Blogs";
+import Cart from "./components/Cart";
 
 const App = () => {
   return (
@@ -8,7 +9,7 @@ const App = () => {
       <Header />
       <main className="grid grid-cols-[1fr_400px] gap-4">
         <Blogs />
-        <div className="bg-gray-500"></div>
+        <Cart />
       </main>
     </div>
   );
